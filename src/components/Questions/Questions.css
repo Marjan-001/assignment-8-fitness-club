@@ -1,0 +1,14 @@
+.question {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+h1 {
+    color: rgb(6, 81, 111);
+}
+
+p {
+    margin-top: 30px;
+}

@@ -10,6 +10,7 @@ const Detail = ({ detailExerciseTime, selectBreak }) => {
 
 
 
+
     return (
         <div>
             <h2>Exercise Details</h2>

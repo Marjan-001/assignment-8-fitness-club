@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Activity from '../Activity/Activity';
 import Break from '../Break/Break';
 import Detail from '../Detail/Detail';
+import Questions from '../Questions/Questions';
 import './Home.css'
 
 const Home = () => {
@@ -58,7 +61,7 @@ const Home = () => {
         setSelectBreak(value6);
 
     }
-
+    const notify = () => toast("Congratulation Activity Completed");
     return (
         <div className='home'>
             <div className="activity-container">
@@ -74,7 +77,7 @@ const Home = () => {
             </div>
             <div className="profile-container">
                 <h2> Profile: Marjan</h2>
-                <p>Location: Bangladesh</p>
+
                 <div>
                     <div className='profile'>
                         <h5>Weight:50kg</h5>
@@ -99,8 +102,10 @@ const Home = () => {
                     selectBreak={selectBreak}
                 ></Detail>
 
-                <button className='btn-complete'> Activity Completed</button>
+                <button onClick={notify} className='btn-complete'> Activity Completed</button>
+                <ToastContainer />
             </div>
+            <Questions></Questions>
 
         </div>
     );

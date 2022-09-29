@@ -7,3 +7,8 @@
 .header h1 {
     color: deepskyblue;
 }
+
+h2 {
+    margin-left: 10px;
+    color: rgb(6, 81, 111);
+}
