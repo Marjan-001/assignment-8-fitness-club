@@ -42,3 +42,13 @@
     margin-top: 20px;
     width: 50%;
 }
+
+@media screen and (max-width:480px) {
+    .activity-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+
+
+}
