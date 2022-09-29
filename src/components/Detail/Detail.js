@@ -1,7 +1,7 @@
 import React, { } from 'react';
 import './Detail.css'
 
-const Detail = ({ detailExerciseTime }) => {
+const Detail = ({ detailExerciseTime, selectBreak }) => {
     let totalTime = 0;
     for (const exerciseTime of detailExerciseTime) {
         totalTime = totalTime + exerciseTime.time
@@ -17,7 +17,7 @@ const Detail = ({ detailExerciseTime }) => {
                 <h2>Exercise Time:{totalTime}seconds</h2>
 
             </div>
-            <div className='break-time'><h2> Break Time:</h2></div>
+            <div className='break-time'><h2> Break Time:{selectBreak}seconds</h2></div>
         </div>
     );
 };

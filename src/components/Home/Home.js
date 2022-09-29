@@ -21,7 +21,43 @@ const Home = () => {
         const newDetailExercise = [...detailExerciseTime, activity];
         setExerciseTime(newDetailExercise);
     }
+    const [selectBreak, setSelectBreak] = useState(0);
+    const handleBtnFirst = () => {
 
+        const value1 = 10;
+        setSelectBreak(value1);
+
+    }
+    const handleBtnSecond = () => {
+
+        const value2 = 20;
+        setSelectBreak(value2);
+
+    }
+    const handleBtnThird = () => {
+
+        const value3 = 30;
+        setSelectBreak(value3);
+
+    }
+    const handleBtnFourth = () => {
+
+        const value4 = 40;
+        setSelectBreak(value4);
+
+    }
+    const handleBtnFifth = () => {
+
+        const value5 = 50;
+        setSelectBreak(value5);
+
+    }
+    const handleBtnSixth = () => {
+
+        const value6 = 60;
+        setSelectBreak(value6);
+
+    }
 
     return (
         <div className='home'>
@@ -51,9 +87,17 @@ const Home = () => {
                     </div>
                 </div>
                 <div>
-                    <Break></Break>
+                    <Break handleBtnFirst={handleBtnFirst}
+                        handleBtnSecond={handleBtnSecond}
+                        handleBtnThird={handleBtnThird}
+                        handleBtnFourth={handleBtnFourth}
+                        handleBtnFifth={handleBtnFifth}
+                        handleBtnSixth={handleBtnSixth}
+                    ></Break>
                 </div>
-                <Detail detailExerciseTime={detailExerciseTime}></Detail>
+                <Detail detailExerciseTime={detailExerciseTime}
+                    selectBreak={selectBreak}
+                ></Detail>
 
                 <button className='btn-complete'> Activity Completed</button>
             </div>
