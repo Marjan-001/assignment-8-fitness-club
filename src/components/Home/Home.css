@@ -1,0 +1,31 @@
+.home {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.activity-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.profile-container {
+    background-color: rgb(231, 227, 227);
+}
+
+.profile {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: darkgray;
+    margin: 6px;
+
+}
+
+.profile h5 {
+    font-size: 16px;
+    color: rgb(6, 81, 111);
+    ;
+}

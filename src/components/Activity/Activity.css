@@ -1,0 +1,44 @@
+.activity {
+    width: 300px;
+    height: 510px;
+    margin: 0 auto;
+    border: 1px solid grey;
+    border-radius: 8px;
+
+}
+
+.activity img {
+    width: 286px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 7px;
+}
+
+.activity-name {
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 22px;
+    color: rgb(6, 81, 111);
+
+
+}
+
+.activity-time {
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(6, 81, 111);
+}
+
+.activity-info {
+    margin: 0 14px;
+}
+
+.btn-add {
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(93, 194, 222);
+    border: none;
+    border-radius: 5px;
+
+
+}
