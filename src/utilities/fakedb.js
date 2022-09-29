@@ -3,19 +3,19 @@ const addToDb = selectBreak => {
     let breakTimeCart = {};
 
     //get the shopping cart from local storage
-    const storedCart = localStorage.getItem('breakTimeCart');
-    if (storedCart) {
-        breakTimeCart = JSON.parse(storedCart);
+    const storeTime = localStorage.getItem('breakTimeCart');
+    if (storeTime) {
+        breakTimeCart = JSON.parse(storeTime);
     }
 
     // add quantity
     const quantity = breakTimeCart[selectBreak];
     if (quantity) {
-        const newQuantity = quantity + 1;
+        const newQuantity = quantity;
         breakTimeCart[selectBreak] = newQuantity;
     }
     else {
-        breakTimeCart[selectBreak] = 1;
+        breakTimeCart[selectBreak] = 0;
     }
     localStorage.setItem('breakTimeCart', JSON.stringify(breakTimeCart));
 }

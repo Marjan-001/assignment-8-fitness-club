@@ -68,6 +68,11 @@ const Home = () => {
         addToDb(selectBreak);
 
     }
+    // local storage
+    useEffect(() => {
+        addToDb(selectBreak)
+    }, [selectBreak]);
+
     const notify = () => toast("Congratulation Activity Completed");
     return (
         <div className='home'>
