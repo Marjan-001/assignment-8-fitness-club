@@ -11,8 +11,12 @@ const Activity = (props) => {
             <div className='activity-info'>
                 <p className='activity-name'>{name}</p>
                 <p className='activity-time'>Time:{time}s</p>
-                <button className='btn-add'> ADD To List</button>
+
             </div>
+            <button className='btn-add'>
+                <p>Add To List</p>
+
+            </button>
 
 
 

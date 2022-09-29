@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Activity from '../Activity/Activity';
 import Break from '../Break/Break';
+import Detail from '../Detail/Detail';
 import './Home.css'
 
 const Home = () => {
@@ -42,8 +43,11 @@ const Home = () => {
                 <div>
                     <Break></Break>
                 </div>
+                <Detail></Detail>
 
+                <button className='btn-complete'> Activity Completed</button>
             </div>
+
         </div>
     );
 };

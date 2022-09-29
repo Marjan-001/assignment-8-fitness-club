@@ -11,6 +11,8 @@
 
 .profile-container {
     background-color: rgb(231, 227, 227);
+    border-radius: 10px;
+    margin: 0 auto;
 }
 
 .profile {
@@ -19,13 +21,24 @@
     align-items: center;
     border: 1px solid grey;
     border-radius: 10px;
-    background-color: darkgray;
+    background-color: rgba(201, 225, 243, 0.503);
     margin: 6px;
 
 }
 
 .profile h5 {
     font-size: 16px;
-    color: rgb(6, 81, 111);
+    color: deepskyblue;
     ;
+}
+
+.btn-complete {
+    padding: 20px 30px;
+    border: none;
+    border: 1px solid deepskyblue;
+    background-color: deepskyblue;
+    color: white;
+    margin-left: 25%;
+    margin-top: 20px;
+    width: 50%;
 }

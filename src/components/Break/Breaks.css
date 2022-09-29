@@ -1,0 +1,19 @@
+.btn-break {
+    padding: 15px 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: deepskyblue;
+    color: aliceblue;
+
+}
+
+.break {
+    background-color: rgba(201, 225, 243, 0.503);
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+
+    margin: 6px;
+
+}

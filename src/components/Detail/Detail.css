@@ -1,0 +1,17 @@
+.exercise-time {
+    background-color: rgba(201, 225, 243, 0.503);
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+
+    margin: 6px;
+}
+
+.break-time {
+    background-color: rgba(201, 225, 243, 0.503);
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+
+    margin: 6px;
+}
