@@ -6,6 +6,7 @@ import './Home.css'
 
 const Home = () => {
     const [activities, setActivity] = useState([]);
+
     useEffect(() => {
 
         fetch('db.json')
@@ -13,6 +14,13 @@ const Home = () => {
             .then(data => setActivity(data))
 
     }, [])
+    const [detailExerciseTime, setExerciseTime] = useState([]);
+
+    const handleAddTime = (activity) => {
+        // console.log(time);
+        const newDetailExercise = [...detailExerciseTime, activity];
+        setExerciseTime(newDetailExercise);
+    }
 
 
     return (
@@ -22,6 +30,8 @@ const Home = () => {
                     activities.map(activity => <Activity
                         key={activity.id}
                         activity={activity}
+                        handleAddTime={handleAddTime}
+
 
                     ></Activity>)
                 }
@@ -43,7 +53,7 @@ const Home = () => {
                 <div>
                     <Break></Break>
                 </div>
-                <Detail></Detail>
+                <Detail detailExerciseTime={detailExerciseTime}></Detail>
 
                 <button className='btn-complete'> Activity Completed</button>
             </div>
