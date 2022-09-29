@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { addToDb } from '../../utilities/fakedb';
 import Activity from '../Activity/Activity';
 import Break from '../Break/Break';
 import Detail from '../Detail/Detail';
@@ -29,36 +30,42 @@ const Home = () => {
 
         const value1 = 10;
         setSelectBreak(value1);
+        addToDb(selectBreak);
 
     }
     const handleBtnSecond = () => {
 
         const value2 = 20;
         setSelectBreak(value2);
+        addToDb(selectBreak);
 
     }
     const handleBtnThird = () => {
 
         const value3 = 30;
         setSelectBreak(value3);
+        addToDb(selectBreak);
 
     }
     const handleBtnFourth = () => {
 
         const value4 = 40;
         setSelectBreak(value4);
+        addToDb(selectBreak);
 
     }
     const handleBtnFifth = () => {
 
         const value5 = 50;
         setSelectBreak(value5);
+        addToDb(selectBreak);
 
     }
     const handleBtnSixth = () => {
 
         const value6 = 60;
         setSelectBreak(value6);
+        addToDb(selectBreak);
 
     }
     const notify = () => toast("Congratulation Activity Completed");
